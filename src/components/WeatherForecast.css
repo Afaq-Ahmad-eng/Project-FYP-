@@ -1,0 +1,79 @@
+.weather-forecast {
+  background: rgba(11, 171, 80, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 30px auto;
+  color: #064e26;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(11, 171, 80, 0.2);
+}
+
+.forecast-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px 10px;
+  width: 110px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.forecast-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(11, 171, 80, 0.4);
+}
+
+.forecast-card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 8px;
+}
+
+.weather-day {
+  font-weight: 600;
+  color: #0b793f;
+  margin-bottom: 6px;
+}
+
+.temperature {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #064e26;
+  margin-bottom: 6px;
+}
+
+.description {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #4a7c58;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .forecast-cards {
+    justify-content: center;
+  }
+
+  .forecast-card {
+    width: 90px;
+    padding: 10px 8px;
+  }
+
+  .forecast-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .temperature {
+    font-size: 1.2rem;
+  }
+}
